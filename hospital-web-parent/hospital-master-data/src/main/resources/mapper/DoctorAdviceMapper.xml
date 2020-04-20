@@ -3,10 +3,7 @@
 <mapper namespace="hospital.masterdata.mapper.DoctorAdviceMapper">
     <sql id="baseColumns">
         doctor_advice.id,
-        doctor_advice.adviceName,
-        doctor_advice.describe,
-        doctor_advice.createDate,
-        doctor_advice.createBy
+        doctor_advice.adviceInfo
     </sql>
     <select id="findAll" resultType="DoctorAdvice">
         SELECT
@@ -20,7 +17,7 @@
         FROM
         doctor_advice
         <where>
-            <if test="adviceName != null and adviceName != ''">and adviceName like concat('%',#{adviceName},'%')</if>
+            <if test="adviceInfo != null and adviceInfo != ''">and adviceInfo like concat('%',#{adviceInfo},'%')</if>
         </where>
     </select>
 </mapper>

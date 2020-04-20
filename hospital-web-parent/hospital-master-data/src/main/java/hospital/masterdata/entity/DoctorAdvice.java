@@ -11,8 +11,5 @@ import java.util.Date;
 @ToString
 public class DoctorAdvice {
     private Integer id;
-    private String adviceName;
-    private String describe;
-    private Date createDate;
-    private String createBy;
+    private String adviceInfo;
 }

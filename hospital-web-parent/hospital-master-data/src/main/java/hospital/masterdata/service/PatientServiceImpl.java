@@ -1,8 +1,10 @@
 package hospital.masterdata.service;
 import hospital.masterdata.entity.Patient;
 import hospital.masterdata.mapper.PatientMapper;
+import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.List;
+@Service
 public class PatientServiceImpl implements PatientService {
     @Resource
     private PatientMapper patientMapper;

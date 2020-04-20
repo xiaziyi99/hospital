@@ -13,7 +13,7 @@ public class DoctorAdviceServiceImpl implements DoctorAdviceService {
         return doctorAdviceMapper.findAll();
     }
     @Override
-    public List<DoctorAdvice> findAllBy(String adviceName) {
-        return doctorAdviceMapper.findAllBy(adviceName);
+    public List<DoctorAdvice> findAllBy(String adviceInfo) {
+        return doctorAdviceMapper.findAllBy(adviceInfo);
     }
 }

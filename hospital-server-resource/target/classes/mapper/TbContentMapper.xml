@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.bdqn.his.authresource.mapper.TbContentMapper">
+<mapper namespace="hospital.authresource.mapper.TbContentMapper">
 
-    <resultMap type="cn.bdqn.his.authresource.domain.TbContent" id="TbContentMap">
+    <resultMap type="hospital.authresource.domain.TbContent" id="TbContentMap">
         <result property="id" column="id" jdbcType="BIGINT"/>
         <result property="categoryId" column="category_id" jdbcType="BIGINT"/>
         <result property="title" column="title" jdbcType="VARCHAR"/>

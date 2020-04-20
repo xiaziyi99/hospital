@@ -33,4 +33,10 @@ public class SurchargeController {
         System.out.println(pageInfo.getList().size());
         return new Response(ResponseEnum.SUCCESS).setResponseBody(pageInfo);
     }
+//    @RequestMapping(value = "/add",method = {RequestMethod.GET,RequestMethod.POST})
+//    public Response add(Integer pageNum, Integer pageSize,Surcharge surcharge) {
+//        PageHelper.startPage(pageNum,pageSize);
+//        int count = surchargeService.addSurcharge(surcharge);
+//        return new Response(ResponseEnum.SUCCESS).setResponseBody(surcharge);
+//    }
 }

@@ -26,9 +26,9 @@ public class DoctorAdviceController {
         return new Response(ResponseEnum.SUCCESS).setResponseBody(pageInfo);
     }
     @RequestMapping(value = "/findBy",method = {RequestMethod.GET,RequestMethod.POST})
-    public Response findBy(Integer pageNum, Integer pageSize, String adviceName) {
+    public Response findBy(Integer pageNum, Integer pageSize, String adviceInfo) {
         PageHelper.startPage(pageNum,pageSize);
-        List<DoctorAdvice> list = doctorAdviceService.findAllBy(adviceName);
+        List<DoctorAdvice> list = doctorAdviceService.findAllBy(adviceInfo);
         PageInfo<DoctorAdvice> pageInfo = new PageInfo<>(list);
         return new Response(ResponseEnum.SUCCESS).setResponseBody(pageInfo);
     }

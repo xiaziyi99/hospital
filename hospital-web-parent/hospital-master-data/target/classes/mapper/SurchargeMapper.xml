@@ -28,4 +28,10 @@
             <if test="surchargeName != null and surchargeName != ''">and surchargeName like concat('%',#{surchargeName},'%')</if>
         </where>
     </select>
+    <insert id="addSurcharge">
+        insert into
+        surcharge (<include refid="baseColumns"/>)
+        values
+        (#{surchargeName},#{surchargeType},#{money},#{costPrice},#{createDate},#{createBy},#{discount},#{surchargeStatus})
+    </insert>
 </mapper>

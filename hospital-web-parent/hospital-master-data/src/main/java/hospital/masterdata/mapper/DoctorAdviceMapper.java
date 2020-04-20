@@ -6,5 +6,5 @@ import java.util.List;
 @Mapper
 public interface DoctorAdviceMapper {
     List<DoctorAdvice> findAll();
-    List<DoctorAdvice> findAllBy(@Param("adviceName") String adviceName);
+    List<DoctorAdvice> findAllBy(@Param("adviceInfo") String adviceInfo);
 }

@@ -1,6 +1,7 @@
 package hospital.prescription.controller;
 import hospital.common.http.HttpClientHelper;
 import hospital.common.response.Response;
+import hospital.masterdata.entity.Surcharge;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -167,22 +168,21 @@ public class PrescriptionController {
     @ApiImplicitParams({
             @ApiImplicitParam(value = "页码，查询第几页数据,必填",name = "pageNum", required = true),
             @ApiImplicitParam(value = "每页显示几条,必填",name = "pageSize", required = true),
-            @ApiImplicitParam(value = "处方类别",name = "surchargeType"),
-            @ApiImplicitParam(value = "医嘱名称，模糊匹配",name = "surchargeName"),
+            @ApiImplicitParam(value = "医嘱名称，模糊匹配",name = "adviceInfo"),
     })
     @GetMapping(value = "getDoctorAdvice/findBy")
-    public Response getDoctorAdvice(Integer pageNum, Integer pageSize, String doctorAdviceName) throws Exception {
+    public Response getDoctorAdvice(Integer pageNum, Integer pageSize, String adviceInfo) throws Exception {
         if(pageNum == null) pageNum = 1;
         if(pageSize == null) pageSize = 5;
         StringBuffer buffer = new StringBuffer("?").append("pageNum=").append(pageNum).append("&pageSize=").append(pageSize);
 //        if(surchargeType!=null) {
 //            buffer.append("&surchargeType=").append(surchargeType);
 //        }
-        if(!StringUtils.isEmpty(doctorAdviceName)) {
-            buffer.append("&doctorAdviceName=").append(URLEncoder.encode(doctorAdviceName, "UTF-8"));
+        if(!StringUtils.isEmpty(adviceInfo)) {
+            buffer.append("&adviceInfo=").append(URLEncoder.encode(adviceInfo, "UTF-8"));
         }
         log.debug("params:{}", buffer);
-        return httpClientHelper.getForResponse(serverMasterdataUrl + "/api/surcharge/findBy"+ buffer);
+        return httpClientHelper.getForResponse(serverMasterdataUrl + "/api/doctorAdvice/findBy"+ buffer);
     }
 
     //附加费用查询接口
@@ -290,6 +290,41 @@ public class PrescriptionController {
         log.debug("params:{}", buffer);
         return httpClientHelper.getForResponse(serverMasterdataUrl + "/api/patient/findBy"+ buffer);
     }
+
+
+    //处方医嘱保存接口
+
+    //处方疾病保存接口
+
+    //处方附加费用保存接口
+    @ApiOperation(value = "调用附加费用模块api,分页查询附加费用列表",response = Response.class)
+    @ApiImplicitParams({
+            @ApiImplicitParam(value = "页码，查询第几页数据,必填",name = "pageNum", required = true),
+            @ApiImplicitParam(value = "每页显示几条,必填",name = "pageSize", required = true),
+            @ApiImplicitParam(value = "处方类别",name = "surchargeType"),
+            @ApiImplicitParam(value = "附加费用名称，模糊匹配",name = "surchargeName"),
+    })
+    @GetMapping(value = "getSurcharge/findBy")
+    public Response addSurcharge(Integer pageNum, Integer pageSize, Surcharge surcharge) throws Exception {
+        if(pageNum == null) pageNum = 1;
+        if(pageSize == null) pageSize = 5;
+        StringBuffer buffer = new StringBuffer("?").append("pageNum=").append(pageNum).append("&pageSize=").append(pageSize);
+//        if(surchargeType!=null) {
+//            buffer.append("&surchargeType=").append(surchargeType);
+//        }
+//        if(!StringUtils.isEmpty(surchargeName)) {
+//            buffer.append("&surchargeName=").append(URLEncoder.encode(surchargeName, "UTF-8"));
+//        }
+        log.debug("params:{}", buffer);
+        return httpClientHelper.getForResponse(serverMasterdataUrl + "/api/surcharge/findBy"+ buffer);
+    }
+
+    //处方检查项目保存接口
+
+    //处方药品保存接口
+
+    //处方保存接口
+
 
     //测试post接口失败
 //    @GetMapping(value = "getMedicines/findByPost")
