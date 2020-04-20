@@ -1,0 +1,7 @@
+cn\bdqn\his\authresource\AuthResourceApplication.class
+cn\bdqn\his\authresource\mapper\TbContentMapper.class
+cn\bdqn\his\authresource\controller\ContentController.class
+cn\bdqn\his\authresource\domain\TbContent$TbContentBuilder.class
+cn\bdqn\his\authresource\domain\TbContent.class
+cn\bdqn\his\authresource\service\ContentService.class
+cn\bdqn\his\authresource\config\ResourceServerConfig.class

@@ -1,0 +1,13 @@
+cn\bdqn\his\authserver\AuthserverJdbcApplication.class
+cn\bdqn\his\authserver\config\AuthServerConfig.class
+cn\bdqn\his\authserver\config\service\UserDetailsServiceImpl.class
+cn\bdqn\his\authserver\domain\TbPermission$TbPermissionBuilder.class
+cn\bdqn\his\authserver\domain\TbUser$TbUserBuilder.class
+cn\bdqn\his\authserver\config\WebSecurityConfig.class
+cn\bdqn\his\authserver\domain\TbUser.class
+cn\bdqn\his\authserver\domain\TbPermission.class
+cn\bdqn\his\authserver\service\TbPermissionService.class
+cn\bdqn\his\authserver\service\TbUserService.class
+cn\bdqn\his\authserver\controller\Oauth2Controller.class
+cn\bdqn\his\authserver\mapper\TbPermissionMapper.class
+cn\bdqn\his\authserver\mapper\TbUserMapper.class

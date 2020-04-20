@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="hospital.masterdata.mapper.PrescriptionModelMapper">
+    <sql id="baseColumns">
+        prescription_model.id,
+        prescription_model.modelNo,
+        prescription_model.modelName,
+        prescription_model.prescriptionType,
+        prescription_model.diagnosis,
+        prescription_model.modelPower,
+        prescription_model.createDate,
+        prescription_model.createBy
+    </sql>
+    <select id="findAll" resultType="PrescriptionModel">
+        SELECT
+        <include refid="baseColumns"/>
+        FROM
+        prescription_model
+    </select>
+    <select id="findAllBy" resultType="PrescriptionModel">
+        SELECT
+        <include refid="baseColumns"/>
+        FROM
+        prescription_model
+        <where>
+            <if test="prescriptionType != null and prescriptionType != ''">and prescriptionType = #{prescriptionType}</if>
+            <if test="modelPower != null and modelPower != ''">and modelPower=#{modelPower}</if>
+            <if test="modelName != null and modelName != ''">and modelName like concat('%',#{modelName},'%')</if>
+        </where>
+    </select>
+</mapper>

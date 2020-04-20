@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="hospital.masterdata.mapper.ItemsMapper">
+    <sql id="baseColumns">
+        items.id,
+        items.itemsNo,
+        items.itemsName,
+        items.itemsType,
+        items.invoice,
+        items.retail,
+        items.costPrice,
+        items.unit,
+        items.itemsStatus,
+        items.createDate
+    </sql>
+    <select id="findAll" resultType="Items">
+        SELECT
+        <include refid="baseColumns"/>
+        FROM
+        items
+    </select>
+    <select id="findAllBy" resultType="Items">
+        SELECT
+        <include refid="baseColumns"/>
+        FROM
+        items
+        <where>
+            <if test="itemsStatus != null and itemsStatus != ''">and itemsStatus = #{itemsStatus}</if>
+            <if test="itemsName != null and itemsName != ''">and itemsName like concat('%',#{itemsName},'%')</if>
+            <if test="itemsNo != null and itemsNo != ''">and itemsNo like concat('%',#{itemsNo},'%')</if>
+        </where>
+    </select>
+</mapper>

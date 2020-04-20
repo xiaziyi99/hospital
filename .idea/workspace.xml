@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4df1e23e-560c-499e-a6b9-776842e8e78b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common/http/HttpClientHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common/interceptor/SsoCookieWrapperInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common/response/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common/response/ResponseEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common/swagger/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/cn/bdqn/his/common/http/HttpClientHelper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/cn/bdqn/his/common/interceptor/SsoCookieWrapperInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/cn/bdqn/his/common/response/Response.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/cn/bdqn/his/common/response/ResponseEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/cn/bdqn/his/common/swagger/SwaggerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/http/HttpClientHelper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/interceptor/SsoCookieWrapperInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/response/Response.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/response/ResponseEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/swagger/SwaggerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/src/main/java/hospital/authserver/AuthServerJdbcApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/src/main/java/hospital/authserver/classTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/src/main/java/hospital/authserver/config/AuthServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/src/main/java/hospital/authserver/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/src/main/java/hospital/authserver/config/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/src/main/java/hospital/authserver/controller/Oauth2Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/src/main/java/hospital/authserver/domain/TbPermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/src/main/java/hospital/authserver/domain/TbUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/src/main/java/hospital/authserver/mapper/TbPermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/src/main/java/hospital/authserver/mapper/TbUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/src/main/java/hospital/authserver/service/TbPermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/src/main/java/hospital/authserver/service/TbUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/src/main/resources/mapper/TbPermissionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/src/main/resources/mapper/TbUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/src/main/resources/templates/oauth/confirm_access.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/hospital/authserver/AuthserverJdbcApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/hospital/authserver/classTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/hospital/authserver/config/AuthServerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/hospital/authserver/config/WebSecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/hospital/authserver/config/service/UserDetailsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/hospital/authserver/controller/Oauth2Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/hospital/authserver/domain/TbPermission$TbPermissionBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/hospital/authserver/domain/TbPermission.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/hospital/authserver/domain/TbUser$TbUserBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/hospital/authserver/domain/TbUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/hospital/authserver/mapper/TbPermissionMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/hospital/authserver/mapper/TbUserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/hospital/authserver/service/TbPermissionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/hospital/authserver/service/TbUserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/mapper/TbPermissionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/mapper/TbUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/templates/oauth/confirm_access.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-resource/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-resource/src/main/java/hospital/authresource/AuthResourceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-resource/src/main/java/hospital/authresource/config/ResourceServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-resource/src/main/java/hospital/authresource/controller/ContentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-resource/src/main/java/hospital/authresource/domain/TbContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-resource/src/main/java/hospital/authresource/mapper/TbContentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-resource/src/main/java/hospital/authresource/service/ContentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-resource/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-resource/src/main/resources/mapper/TbContentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-resource/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-resource/target/classes/cn/bdqn/his/authresource/AuthResourceApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-resource/target/classes/cn/bdqn/his/authresource/config/ResourceServerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-resource/target/classes/cn/bdqn/his/authresource/controller/ContentController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-resource/target/classes/cn/bdqn/his/authresource/domain/TbContent$TbContentBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-resource/target/classes/cn/bdqn/his/authresource/domain/TbContent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-resource/target/classes/cn/bdqn/his/authresource/mapper/TbContentMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-resource/target/classes/cn/bdqn/his/authresource/service/ContentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-resource/target/classes/mapper/TbContentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-resource/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-server-resource/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/MasterDataApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/DoctorAdviceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/DoctorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/ItemsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/PatientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/PrescriptionModelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/SicknessController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/SurchargeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/entity/Doctor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/entity/DoctorAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/entity/Items.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/entity/Patient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/entity/PrescriptionModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/entity/Sickness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/entity/Surcharge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/DoctorAdviceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/DoctorMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/ItemsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/PatientMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/PrescriptionModelMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/SicknessMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/SurchargeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/DoctorAdviceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/DoctorAdviceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/DoctorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/DoctorServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/ItemsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/ItemsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/PatientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/PatientServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/PrescriptionModelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/PrescriptionModelServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/SicknessService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/SicknessServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/SurchargeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/SurchargeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/resources/META-INF/spring-devtools.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/resources/mapper/DoctorAdviceMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/resources/mapper/DoctorMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/resources/mapper/ItemsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/resources/mapper/PatientMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/resources/mapper/PrescriptionModelMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/resources/mapper/SicknessMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/resources/mapper/SurchargeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/resources/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/META-INF/spring-devtools.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/MasterDataApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/config/MvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/controller/DoctorController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/controller/ItemsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/controller/PatientController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/controller/PrescriptionModelController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/controller/SicknessController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/controller/SurchargeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/entity/Doctor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/entity/Items$ItemsBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/entity/Items.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/entity/Patient$PatientBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/entity/Patient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/entity/PrescriptionModel$PrescriptionModelBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/entity/PrescriptionModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/entity/Sickness$SicknessBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/entity/Sickness.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/entity/Surcharge$SurchargeBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/entity/Surcharge.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/mapper/DoctorMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/mapper/ItemsMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/mapper/PatientMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/mapper/PrescriptionModelMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/mapper/SicknessMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/mapper/SurchargeMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/DoctorService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/DoctorServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/ItemsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/ItemsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/PatientService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/PatientServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/PrescriptionModelService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/PrescriptionModelServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/SicknessService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/SicknessServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/SurchargeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/SurchargeServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/mapper/DoctorMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/mapper/ItemsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/mapper/PatientMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/mapper/PrescriptionModelMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/mapper/SicknessMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/mapper/SurchargeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/src/main/java/hospital/MedicineApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/src/main/java/hospital/medicine/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/src/main/java/hospital/medicine/controller/MedicineController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/src/main/java/hospital/medicine/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/src/main/java/hospital/medicine/entity/Medicine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/src/main/java/hospital/medicine/entity/MedicineType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/src/main/java/hospital/medicine/mapper/MedicineMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/src/main/java/hospital/medicine/service/MedicineService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/src/main/java/hospital/medicine/service/MedicineServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/src/main/resources/META-INF/spring-devtools.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/src/main/resources/mapper/MedicineMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/src/main/resources/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/META-INF/spring-devtools.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/cn/bdqn/his/MedicineApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/cn/bdqn/his/medicine/config/MvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/cn/bdqn/his/medicine/controller/MedicineController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/cn/bdqn/his/medicine/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/cn/bdqn/his/medicine/entity/Medicine$MedicineBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/cn/bdqn/his/medicine/entity/Medicine.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/cn/bdqn/his/medicine/entity/MedicineType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/cn/bdqn/his/medicine/mapper/MedicineMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/cn/bdqn/his/medicine/service/MedicineService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/cn/bdqn/his/medicine/service/MedicineServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/hospital/MedicineApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/hospital/medicine/config/MvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/hospital/medicine/controller/MedicineController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/hospital/medicine/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/hospital/medicine/entity/Medicine$MedicineBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/hospital/medicine/entity/Medicine.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/hospital/medicine/entity/MedicineType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/hospital/medicine/mapper/MedicineMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/hospital/medicine/service/MedicineService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/hospital/medicine/service/MedicineServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/mapper/MedicineMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/PrescriptionApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/controller/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/controller/PrescriptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/resources/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/resources/static/js/jquery-1.12.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/cn/bdqn/his/PrescriptionApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/cn/bdqn/his/prescription/config/MvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/cn/bdqn/his/prescription/controller/DemoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/cn/bdqn/his/prescription/controller/PrescriptionController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/hospital/PrescriptionApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/hospital/prescription/config/MvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/hospital/prescription/controller/DemoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/hospital/prescription/controller/PrescriptionController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/static/js/jquery-1.12.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/maven/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aeLZ9NkcyBLmq6PLDnNwgjacoq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="cn.bdqn.his.medicine.service" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hospital.masterdata.controller" />
+      <recent name="hospital.masterdata.service" />
+      <recent name="hospital.masterdata.mapper" />
+      <recent name="hospital.masterdata.entity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Y2\hospital\hospital-web-parent\hospital-master-data\src\main\resources\mapper" />
+      <recent name="D:\Y2\hospital\hospital-web-parent\hospital-master-data\src\main\resources" />
+      <recent name="D:\Y2\hospital\hospital-web-parent\hospital-master-data\src\main\java\hospital\masterdata\service" />
+      <recent name="D:\Y2\hospital\hospital-web-parent\hospital-prescription\src\main\java" />
+      <recent name="D:\Y2\hospital\hospital-web-parent\hospital-medicine\src\main\java" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MasterDataApp">
+    <configuration name="classTest.Test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hospital-server-auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hospital.authserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hospital.authserver" />
+      <option name="MAIN_CLASS_NAME" value="hospital.authserver.classTest" />
+      <option name="METHOD_NAME" value="Test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthServerJdbcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="hospital-server-auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hospital.authserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hospital.authserver.AuthServerJdbcApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MasterDataApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="hospital-master-data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hospital.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hospital.MasterDataApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MedicineApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="hospital-medicine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hospital.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hospital.MedicineApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrescriptionApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="hospital-prescription" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hospital.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hospital.PrescriptionApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.classTest.Test1" />
+      <item itemvalue="Spring Boot.MasterDataApp" />
+      <item itemvalue="Spring Boot.MedicineApp" />
+      <item itemvalue="Spring Boot.PrescriptionApp" />
+      <item itemvalue="Spring Boot.AuthServerJdbcApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.MasterDataApp" />
+        <item itemvalue="Spring Boot.PrescriptionApp" />
+        <item itemvalue="Spring Boot.AuthServerJdbcApplication" />
+        <item itemvalue="Spring Boot.MedicineApp" />
+        <item itemvalue="JUnit.classTest.Test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <option name="contentProportion" value="0.22730376" />
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4df1e23e-560c-499e-a6b9-776842e8e78b" name="Default Changelist" comment="" />
+      <created>1587091165658</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587091165658</updated>
+      <workItem from="1587091169081" duration="580000" />
+      <workItem from="1587091799672" duration="1302000" />
+      <workItem from="1587093121286" duration="78000" />
+      <workItem from="1587093340642" duration="276000" />
+      <workItem from="1587093640842" duration="822000" />
+      <workItem from="1587094676428" duration="3889000" />
+      <workItem from="1587098817752" duration="948000" />
+      <workItem from="1587099841855" duration="5637000" />
+      <workItem from="1587189869178" duration="13327000" />
+      <workItem from="1587206878085" duration="2291000" />
+      <workItem from="1587209212339" duration="12690000" />
+      <workItem from="1587259359983" duration="5400000" />
+      <workItem from="1587269607482" duration="602000" />
+      <workItem from="1587299866974" duration="2403000" />
+      <workItem from="1587304029032" duration="5834000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

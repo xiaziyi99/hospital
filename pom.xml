@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.bdqn</groupId>
+    <artifactId>hospital</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>hospital-common</module>
+        <module>hospital-server-auth</module>
+        <module>hospital-server-resource</module>
+        <module>hospital-web-parent</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <java.version>1.8</java.version>
+        <spring-security-oauth2-autoconfigure.version>2.1.8.RELEASE</spring-security-oauth2-autoconfigure.version>
+        <mybatis-spring-boot-starter.version>2.1.1</mybatis-spring-boot-starter.version>
+        <pagehelper-spring-boot-starter.version>1.2.13</pagehelper-spring-boot-starter.version>
+        <druid-spring-boot-starter.version>1.1.13</druid-spring-boot-starter.version>
+        <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+        <pagehelper.version>5.1.11</pagehelper.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.1.8.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <!--<plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>-->
+    </build>
+</project>

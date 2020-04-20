@@ -1,0 +1,10 @@
+cn\bdqn\his\medicine\controller\MedicineController.class
+cn\bdqn\his\medicine\entity\Medicine$MedicineBuilder.class
+cn\bdqn\his\medicine\controller\UserController.class
+cn\bdqn\his\MedicineApp.class
+cn\bdqn\his\medicine\config\MvcConfig.class
+cn\bdqn\his\medicine\entity\MedicineType.class
+cn\bdqn\his\medicine\service\MedicineServiceImpl.class
+cn\bdqn\his\medicine\service\MedicineService.class
+cn\bdqn\his\medicine\mapper\MedicineMapper.class
+cn\bdqn\his\medicine\entity\Medicine.class

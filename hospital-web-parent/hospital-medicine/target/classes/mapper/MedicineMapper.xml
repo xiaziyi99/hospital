@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="hospital.medicine.mapper.MedicineMapper">
+    <sql id="baseColumns">
+        his_medicine.id,
+        his_medicine.type_id,
+        his_medicine.`code`,
+        his_medicine.barcode,
+        his_medicine.`name`,
+        his_medicine.spec,
+        his_medicine.stock,
+        his_medicine.otc,
+        his_medicine.cost_price,
+        his_medicine.sale_price,
+        his_medicine.factory
+    </sql>
+    <select id="findAll" resultType="Medicine">
+        SELECT
+        <include refid="baseColumns"/>
+        FROM
+        his_medicine
+    </select>
+    <select id="findAllBy" resultType="Medicine">
+        SELECT
+            <include refid="baseColumns"/>
+            FROM
+            his_medicine
+            <where>
+                <if test="typeId != null">and type_id = #{typeId}</if>
+                <if test="name != null and name != ''">and `name` like concat('%',#{name},'%')</if>
+            </where>
+    </select>
+</mapper>

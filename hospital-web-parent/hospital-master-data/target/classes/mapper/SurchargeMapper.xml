@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="hospital.masterdata.mapper.SurchargeMapper">
+    <sql id="baseColumns">
+        surcharge.id,
+        surcharge.surchargeName,
+        surcharge.surchargeType,
+        surcharge.money,
+        surcharge.costPrice,
+        surcharge.createDate,
+        surcharge.createBy,
+        surcharge.discount,
+        surcharge.surchargeStatus
+    </sql>
+    <select id="findAll" resultType="Surcharge">
+        SELECT
+        <include refid="baseColumns"/>
+        FROM
+        surcharge
+    </select>
+    <select id="findAllBy" resultType="Surcharge">
+        SELECT
+        <include refid="baseColumns"/>
+        FROM
+        surcharge
+        <where>
+            <if test="surchargeType != null and surchargeType != ''">and surchargeType = #{surchargeType}</if>
+            <if test="surchargeName != null and surchargeName != ''">and surchargeName like concat('%',#{surchargeName},'%')</if>
+        </where>
+    </select>
+</mapper>

@@ -1,0 +1,5 @@
+cn\bdqn\his\common\interceptor\SsoCookieWrapperInterceptor.class
+cn\bdqn\his\common\response\ResponseEnum.class
+cn\bdqn\his\common\swagger\SwaggerConfig.class
+cn\bdqn\his\common\http\HttpClientHelper.class
+cn\bdqn\his\common\response\Response.class

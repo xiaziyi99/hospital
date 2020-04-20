@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="hospital.masterdata.mapper.SicknessMapper">
+    <sql id="baseColumns">
+        sickness.id,
+        sickness.sicknessName
+    </sql>
+    <select id="findAll" resultType="Sickness">
+        SELECT
+        <include refid="baseColumns"/>
+        FROM
+        sickness
+    </select>
+    <select id="findAllBy" resultType="Sickness">
+        SELECT
+        <include refid="baseColumns"/>
+        FROM
+        sickness
+        <where>
+            <if test="sicknessName != null and sicknessName != ''">and sicknessName like concat('%',#{sicknessName},'%')</if>
+        </where>
+    </select>
+</mapper>

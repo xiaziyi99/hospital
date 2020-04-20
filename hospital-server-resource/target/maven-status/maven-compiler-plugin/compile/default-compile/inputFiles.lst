@@ -1,0 +1,6 @@
+D:\Y2\hospital\hospital-server-resource\src\main\java\cn\bdqn\his\authresource\AuthResourceApplication.java
+D:\Y2\hospital\hospital-server-resource\src\main\java\cn\bdqn\his\authresource\controller\ContentController.java
+D:\Y2\hospital\hospital-server-resource\src\main\java\cn\bdqn\his\authresource\domain\TbContent.java
+D:\Y2\hospital\hospital-server-resource\src\main\java\cn\bdqn\his\authresource\mapper\TbContentMapper.java
+D:\Y2\hospital\hospital-server-resource\src\main\java\cn\bdqn\his\authresource\service\ContentService.java
+D:\Y2\hospital\hospital-server-resource\src\main\java\cn\bdqn\his\authresource\config\ResourceServerConfig.java

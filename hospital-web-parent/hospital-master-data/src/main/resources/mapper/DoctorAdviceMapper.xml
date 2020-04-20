@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="hospital.masterdata.mapper.DoctorAdviceMapper">
+    <sql id="baseColumns">
+        doctor_advice.id,
+        doctor_advice.adviceName,
+        doctor_advice.describe,
+        doctor_advice.createDate,
+        doctor_advice.createBy
+    </sql>
+    <select id="findAll" resultType="DoctorAdvice">
+        SELECT
+        <include refid="baseColumns"/>
+        FROM
+        doctor_advice
+    </select>
+    <select id="findAllBy" resultType="DoctorAdvice">
+        SELECT
+        <include refid="baseColumns"/>
+        FROM
+        doctor_advice
+        <where>
+            <if test="adviceName != null and adviceName != ''">and adviceName like concat('%',#{adviceName},'%')</if>
+        </where>
+    </select>
+</mapper>

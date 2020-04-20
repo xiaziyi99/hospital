@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hospital-master-data" />
+        <module name="hospital-prescription" />
+        <module name="hospital-server-auth" />
+        <module name="hospital-server-resource" />
+        <module name="hospital-common" />
+        <module name="hospital-medicine" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="hospital.masterdata.mapper.PatientMapper">
+    <sql id="baseColumns">
+        patient.id,
+        patient.patientNo,
+        patient.patientName,
+        patient.gender,
+        patient.age,
+        patient.phoneNumber,
+        patient.membershipLevel,
+        patient.createDate,
+        patient.createBy
+    </sql>
+    <select id="findAll" resultType="Doctor">
+        SELECT
+        <include refid="baseColumns"/>
+        FROM
+        patient
+    </select>
+    <select id="findAllBy" resultType="Doctor">
+        SELECT
+        <include refid="baseColumns"/>
+        FROM
+        patient
+        <where>
+            <if test="membershipLevel != null and membershipLevel != ''">and membershipLevel = #{membershipLevel}</if>
+            <if test="createDate != null and createDate != ''">and createDate = #{createDate}</if>
+            <if test="patientName != null and patientName != ''">and patientName like concat('%',#{patientName},'%')</if>
+            <if test="phoneNumber != null and phoneNumber != ''">and phoneNumber like concat('%',#{phoneNumber},'%')</if>
+        </where>
+    </select>
+</mapper>
