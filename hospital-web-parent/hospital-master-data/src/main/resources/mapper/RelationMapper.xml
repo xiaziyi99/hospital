@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="hospital.masterdata.mapper.RelationMapper">
+    <!-- 处方医嘱表 -->
+    <insert id="addPrescriptionDoctorAdvice">
+        insert into prescription_doctor_advice_relation values
+        <foreach collection="prescriptionId" index="index" item="item" separator=",">
+            (#{prescriptionId},#{adviceId})
+        </foreach>
+    </insert>
+</mapper>

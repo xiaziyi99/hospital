@@ -175,9 +175,6 @@ public class PrescriptionController {
         if(pageNum == null) pageNum = 1;
         if(pageSize == null) pageSize = 5;
         StringBuffer buffer = new StringBuffer("?").append("pageNum=").append(pageNum).append("&pageSize=").append(pageSize);
-//        if(surchargeType!=null) {
-//            buffer.append("&surchargeType=").append(surchargeType);
-//        }
         if(!StringUtils.isEmpty(adviceInfo)) {
             buffer.append("&adviceInfo=").append(URLEncoder.encode(adviceInfo, "UTF-8"));
         }
