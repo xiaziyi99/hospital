@@ -1,5 +1,5 @@
 package hospital.masterdata.service;
-import hospital.masterdata.entity.Items;
+import hospital.common.entity.Items;
 import java.util.List;
 public interface ItemsService {
     List<Items> findAll();

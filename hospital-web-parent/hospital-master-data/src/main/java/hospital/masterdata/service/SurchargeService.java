@@ -1,5 +1,5 @@
 package hospital.masterdata.service;
-import hospital.masterdata.entity.Surcharge;
+import hospital.common.entity.Surcharge;
 import java.util.List;
 public interface SurchargeService {
     List<Surcharge> findAll();

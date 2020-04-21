@@ -1,4 +1,4 @@
-package hospital.masterdata.entity;
+package hospital.common.entity;
 import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;

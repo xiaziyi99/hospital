@@ -1,8 +1,8 @@
-package hospital.masterdata.entity;
+package hospital.common.entity;
 import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
-import java.util.Date;
+
 /**
  * 医嘱信息表
  */

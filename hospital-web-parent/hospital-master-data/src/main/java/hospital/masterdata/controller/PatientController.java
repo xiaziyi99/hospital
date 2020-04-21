@@ -3,7 +3,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import hospital.common.response.Response;
 import hospital.common.response.ResponseEnum;
-import hospital.masterdata.entity.Patient;
+import hospital.common.entity.Patient;
 import hospital.masterdata.service.PatientService;
 import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.GetMapping;

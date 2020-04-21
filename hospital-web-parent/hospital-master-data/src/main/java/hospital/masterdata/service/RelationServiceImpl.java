@@ -1,6 +1,6 @@
 package hospital.masterdata.service;
-import hospital.masterdata.entity.Prescription;
-import hospital.masterdata.entity.PrescriptionDrugs;
+import hospital.common.entity.Prescription;
+import hospital.common.entity.PrescriptionDrugs;
 import hospital.masterdata.mapper.RelationMapper;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;

@@ -1,6 +1,6 @@
 package hospital.masterdata.service;
-import hospital.masterdata.entity.Prescription;
-import hospital.masterdata.entity.PrescriptionDrugs;
+import hospital.common.entity.Prescription;
+import hospital.common.entity.PrescriptionDrugs;
 public interface RelationService {
     int addPrescriptionDoctorAdvice(Integer prescriptionId, Integer[] adviceId);
     int addPrescriptionSickness(Integer prescriptionId, Integer[] sicknessId);

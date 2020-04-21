@@ -1,5 +1,5 @@
 package hospital.masterdata.service;
-import hospital.masterdata.entity.Surcharge;
+import hospital.common.entity.Surcharge;
 import hospital.masterdata.mapper.SurchargeMapper;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;

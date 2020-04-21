@@ -2,17 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4df1e23e-560c-499e-a6b9-776842e8e78b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/controller/DoctorAdviceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/controller/DoctorAdviceController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/controller/SurchargeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/controller/SurchargeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/entity/DoctorAdvice$DoctorAdviceBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/entity/DoctorAdvice$DoctorAdviceBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/entity/DoctorAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/entity/DoctorAdvice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/mapper/DoctorAdviceMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/mapper/DoctorAdviceMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/mapper/SurchargeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/mapper/SurchargeMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/DoctorAdviceServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/DoctorAdviceServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/PatientServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/PatientServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/SurchargeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/SurchargeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/SurchargeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/SurchargeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/mapper/DoctorAdviceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/mapper/DoctorAdviceMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/DoctorAdviceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/DoctorAdviceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/DoctorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/ItemsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/ItemsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/PrescriptionModelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/PrescriptionModelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/RelationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/RelationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/SicknessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/SicknessController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/SurchargeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/SurchargeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/entity/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common/entity/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/entity/DoctorAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common/entity/DoctorAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/entity/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common/entity/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/entity/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common/entity/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/entity/Prescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common/entity/Prescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/entity/PrescriptionDrugs.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common/entity/PrescriptionDrugs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/entity/PrescriptionModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common/entity/PrescriptionModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/entity/Sickness.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common/entity/Sickness.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/entity/Surcharge.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common/entity/Surcharge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/DoctorAdviceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/DoctorAdviceMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/DoctorMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/DoctorMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/ItemsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/ItemsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/PatientMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/PatientMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/PrescriptionModelMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/PrescriptionModelMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/RelationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/RelationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/SicknessMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/SicknessMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/SurchargeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/SurchargeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/DoctorAdviceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/DoctorAdviceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/DoctorAdviceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/DoctorAdviceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/DoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/DoctorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/DoctorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/DoctorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/ItemsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/ItemsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/ItemsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/ItemsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/PatientServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/PrescriptionModelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/PrescriptionModelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/PrescriptionModelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/PrescriptionModelServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/RelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/RelationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/RelationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/RelationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/SicknessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/SicknessService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/SicknessServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/SicknessServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/SurchargeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/SurchargeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/SurchargeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/SurchargeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/controller/PrescriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/controller/PrescriptionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/hospital/prescription/controller/PrescriptionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/hospital/prescription/controller/PrescriptionController.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,7 +100,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/resources/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
@@ -79,11 +112,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Y2\hospital\hospital-common\src\main\java\hospital\common" />
       <recent name="D:\Y2\hospital\hospital-web-parent\hospital-master-data\src\main\resources\mapper" />
       <recent name="D:\Y2\hospital\hospital-web-parent\hospital-master-data\src\main\resources" />
       <recent name="D:\Y2\hospital\hospital-web-parent\hospital-master-data\src\main\java\hospital\masterdata\service" />
       <recent name="D:\Y2\hospital\hospital-web-parent\hospital-prescription\src\main\java" />
-      <recent name="D:\Y2\hospital\hospital-web-parent\hospital-medicine\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="hospital.prescription.controller" />
@@ -199,8 +232,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AuthServerJdbcApplication" />
         <item itemvalue="Spring Boot.PrescriptionApp" />
+        <item itemvalue="Spring Boot.AuthServerJdbcApplication" />
         <item itemvalue="Spring Boot.MedicineApp" />
       </list>
     </recent_temporary>
@@ -246,7 +279,7 @@
       <workItem from="1587269607482" duration="602000" />
       <workItem from="1587299866974" duration="2403000" />
       <workItem from="1587304029032" duration="13556000" />
-      <workItem from="1587369149219" duration="16377000" />
+      <workItem from="1587369149219" duration="16955000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1587348943819</created>
@@ -276,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587450970373</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test">
+      <created>1587451318178</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587451318178</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

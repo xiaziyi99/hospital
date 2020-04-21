@@ -1,5 +1,5 @@
 package hospital.masterdata.service;
-import hospital.masterdata.entity.PrescriptionModel;
+import hospital.common.entity.PrescriptionModel;
 import java.util.List;
 public interface PrescriptionModelService {
     List<PrescriptionModel> findAll();

@@ -1,5 +1,5 @@
 package hospital.masterdata.mapper;
-import hospital.masterdata.entity.Patient;
+import hospital.common.entity.Patient;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import java.util.List;

@@ -1,5 +1,5 @@
 package hospital.masterdata.service;
-import hospital.masterdata.entity.Sickness;
+import hospital.common.entity.Sickness;
 import hospital.masterdata.mapper.SicknessMapper;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;

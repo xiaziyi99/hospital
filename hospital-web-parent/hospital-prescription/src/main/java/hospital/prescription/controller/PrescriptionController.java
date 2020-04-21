@@ -1,7 +1,6 @@
 package hospital.prescription.controller;
 import hospital.common.http.HttpClientHelper;
 import hospital.common.response.Response;
-import hospital.masterdata.entity.Surcharge;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -12,8 +11,7 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import java.net.URLEncoder;
-import java.util.HashMap;
-import java.util.Map;
+
 @Api
 @RestController
 @Slf4j

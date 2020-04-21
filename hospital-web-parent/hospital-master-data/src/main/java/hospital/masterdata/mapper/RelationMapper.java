@@ -1,6 +1,6 @@
 package hospital.masterdata.mapper;
-import hospital.masterdata.entity.Prescription;
-import hospital.masterdata.entity.PrescriptionDrugs;
+import hospital.common.entity.Prescription;
+import hospital.common.entity.PrescriptionDrugs;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 @Mapper

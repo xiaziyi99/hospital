@@ -1,16 +1,15 @@
 package hospital.masterdata.controller;
-import com.github.pagehelper.PageHelper;
 import hospital.common.response.Response;
 import hospital.common.response.ResponseEnum;
-import hospital.masterdata.entity.Prescription;
-import hospital.masterdata.entity.PrescriptionDrugs;
+import hospital.common.entity.Prescription;
+import hospital.common.entity.PrescriptionDrugs;
 import hospital.masterdata.service.RelationService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import java.util.List;
+
 @Api
 @RestController
 @RequestMapping("/api/relation")

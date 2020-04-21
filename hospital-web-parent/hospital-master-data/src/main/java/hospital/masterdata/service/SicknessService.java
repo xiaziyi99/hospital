@@ -1,5 +1,5 @@
 package hospital.masterdata.service;
-import hospital.masterdata.entity.Sickness;
+import hospital.common.entity.Sickness;
 import java.util.List;
 public interface SicknessService {
     List<Sickness> findAll();
