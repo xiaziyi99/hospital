@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4df1e23e-560c-499e-a6b9-776842e8e78b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/RelationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/RelationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/RelationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/RelationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/resources/mapper/RelationMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/entity/Prescription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/entity/PrescriptionDrugs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/DoctorAdviceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/DoctorAdviceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/DoctorAdviceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/DoctorAdviceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/RelationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/controller/RelationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/RelationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/mapper/RelationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/RelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/RelationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/RelationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/service/RelationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/resources/mapper/RelationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/resources/mapper/RelationMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/controller/PrescriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/controller/PrescriptionController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,6 +66,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/resources/mapper" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -82,10 +84,11 @@
       <recent name="D:\Y2\hospital\hospital-web-parent\hospital-medicine\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hospital.prescription.controller" />
+      <recent name="hospital.masterdata.entity" />
       <recent name="hospital.masterdata.controller" />
       <recent name="hospital.masterdata.service" />
       <recent name="hospital.masterdata.mapper" />
-      <recent name="hospital.masterdata.entity" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="cn.bdqn.his.medicine.service" />
@@ -200,7 +203,7 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@2f2efde6" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1597c6b4" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -233,7 +236,7 @@
       <workItem from="1587269607482" duration="602000" />
       <workItem from="1587299866974" duration="2403000" />
       <workItem from="1587304029032" duration="13556000" />
-      <workItem from="1587369149219" duration="3824000" />
+      <workItem from="1587369149219" duration="16134000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1587348943819</created>
@@ -249,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587369540773</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test">
+      <created>1587373099615</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587373099615</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

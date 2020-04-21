@@ -290,38 +290,117 @@ public class PrescriptionController {
 
 
     //处方医嘱保存接口
+    @ApiOperation(value = "处方医嘱保存接口api,添加处方医嘱",response = Response.class)
+    @ApiImplicitParams({
+            @ApiImplicitParam(value = "处方ID",name = "prescriptionId", required = true),
+            @ApiImplicitParam(value = "医嘱ID",name = "adviceId", required = true)
+    })
+    @PostMapping(value = "relation/addDoctorAdvice")
+    public Response addPrescriptionDoctorAdvice(Integer prescriptionId, Integer[] adviceId) throws Exception {
+        StringBuffer buffer = new StringBuffer("?");
+        if(prescriptionId!=null) {
+            buffer.append("&prescriptionId=").append(prescriptionId);
+        }
+        if(adviceId!=null) {
+            buffer.append("&adviceId=").append(adviceId);
+        }
+        log.debug("params:{}", buffer);
+        return httpClientHelper.getForResponse(serverMasterdataUrl + "/api/relation/addDoctorAdvice"+ buffer);
+    }
 
     //处方疾病保存接口
+    @ApiOperation(value = "处方疾病保存接口api,添加处方疾病",response = Response.class)
+    @ApiImplicitParams({
+            @ApiImplicitParam(value = "处方ID",name = "prescriptionId", required = true),
+            @ApiImplicitParam(value = "疾病ID",name = "sicknessId", required = true)
+    })
+    @PostMapping(value = "relation/addSickness")
+    public Response addPrescriptionDoctorSickness(Integer prescriptionId, Integer[] sicknessId) throws Exception {
+        StringBuffer buffer = new StringBuffer("?");
+        if(prescriptionId!=null) {
+            buffer.append("&prescriptionId=").append(prescriptionId);
+        }
+        if(sicknessId!=null) {
+            buffer.append("&sicknessId=").append(sicknessId);
+        }
+        log.debug("params:{}", buffer);
+        return httpClientHelper.getForResponse(serverMasterdataUrl + "/api/relation/addSickness"+ buffer);
+    }
 
     //处方附加费用保存接口
-    @ApiOperation(value = "调用附加费用模块api,分页查询附加费用列表",response = Response.class)
+    @ApiOperation(value = "处方附加费用接口api,添加处方附加费用",response = Response.class)
     @ApiImplicitParams({
-            @ApiImplicitParam(value = "页码，查询第几页数据,必填",name = "pageNum", required = true),
-            @ApiImplicitParam(value = "每页显示几条,必填",name = "pageSize", required = true),
-            @ApiImplicitParam(value = "处方类别",name = "surchargeType"),
-            @ApiImplicitParam(value = "附加费用名称，模糊匹配",name = "surchargeName"),
+            @ApiImplicitParam(value = "处方ID",name = "prescriptionId", required = true),
+            @ApiImplicitParam(value = "附加费用ID",name = "surchargeId", required = true)
     })
-    @GetMapping(value = "getSurcharge/findBy")
-    public Response addSurcharge(Integer pageNum, Integer pageSize, Surcharge surcharge) throws Exception {
-        if(pageNum == null) pageNum = 1;
-        if(pageSize == null) pageSize = 5;
-        StringBuffer buffer = new StringBuffer("?").append("pageNum=").append(pageNum).append("&pageSize=").append(pageSize);
-//        if(surchargeType!=null) {
-//            buffer.append("&surchargeType=").append(surchargeType);
-//        }
-//        if(!StringUtils.isEmpty(surchargeName)) {
-//            buffer.append("&surchargeName=").append(URLEncoder.encode(surchargeName, "UTF-8"));
-//        }
+    @PostMapping(value = "relation/addSurcharge")
+    public Response addPrescriptionSurcharge(Integer prescriptionId, Integer[] surchargeId) throws Exception {
+        StringBuffer buffer = new StringBuffer("?");
+        if(prescriptionId!=null) {
+            buffer.append("&prescriptionId=").append(prescriptionId);
+        }
+        if(surchargeId!=null) {
+            buffer.append("&surchargeId=").append(surchargeId);
+        }
         log.debug("params:{}", buffer);
-        return httpClientHelper.getForResponse(serverMasterdataUrl + "/api/surcharge/findBy"+ buffer);
+        return httpClientHelper.getForResponse(serverMasterdataUrl + "/api/relation/addSurcharge"+ buffer);
     }
 
     //处方检查项目保存接口
+    @ApiOperation(value = "处方检查项目保存接口api,添加处方检查项目",response = Response.class)
+    @ApiImplicitParams({
+            @ApiImplicitParam(value = "处方ID",name = "prescriptionId", required = true),
+            @ApiImplicitParam(value = "检查项目ID",name = "itemId", required = true)
+    })
+    @PostMapping(value = "relation/addItem")
+    public Response addPrescriptionItem(Integer prescriptionId, Integer[] itemId) throws Exception {
+        StringBuffer buffer = new StringBuffer("?");
+        if(prescriptionId!=null) {
+            buffer.append("&prescriptionId=").append(prescriptionId);
+        }
+        if(itemId!=null) {
+            buffer.append("&itemId=").append(itemId);
+        }
+        log.debug("params:{}", buffer);
+        return httpClientHelper.getForResponse(serverMasterdataUrl + "/api/relation/addItem"+ buffer);
+    }
 
-    //处方药品保存接口
-
+/*    //处方药品保存接口
+    @ApiOperation(value = "处方药品保存接口api,添加处方药品",response = Response.class)
+    @ApiImplicitParams({
+            @ApiImplicitParam(value = "处方ID",name = "prescriptionId", required = true),
+            @ApiImplicitParam(value = "药品ID",name = "drugs = Id", required = true)
+    })
+    @PostMapping(value = "relation/addDrugs")
+    public Response addPrescriptionDrugs(Integer prescriptionId, PrescriptionDrugs prescriptionDrugs) throws Exception {
+        StringBuffer buffer = new StringBuffer("?");
+        if(prescriptionId!=null) {
+            buffer.append("&prescriptionId=").append(prescriptionId);
+        }
+        if(sicknessId!=null) {
+            buffer.append("&sicknessId=").append(sicknessId);
+        }
+        log.debug("params:{}", buffer);
+        return httpClientHelper.getForResponse(serverMasterdataUrl + "/api/relation/addDrugs"+ buffer);
+    }
     //处方保存接口
-
+    @ApiOperation(value = "处方疾病保存接口api,添加处方疾病",response = Response.class)
+    @ApiImplicitParams({
+            @ApiImplicitParam(value = "处方ID",name = "prescriptionId", required = true),
+            @ApiImplicitParam(value = "医嘱ID",name = "adviceId", required = true)
+    })
+    @PostMapping(value = "relation/addPrescription")
+    public Response addPrescription(Integer prescriptionId, Prescription prescription) throws Exception {
+        StringBuffer buffer = new StringBuffer("?");
+        if(prescriptionId!=null) {
+            buffer.append("&prescriptionId=").append(prescriptionId);
+        }
+        if(sicknessId!=null) {
+            buffer.append("&sicknessId=").append(sicknessId);
+        }
+        log.debug("params:{}", buffer);
+        return httpClientHelper.getForResponse(serverMasterdataUrl + "/api/relation/addPrescription"+ buffer);
+    }*/
 
     //测试post接口失败
 //    @GetMapping(value = "getMedicines/findByPost")

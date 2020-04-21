@@ -8,4 +8,40 @@
             (#{prescriptionId},#{adviceId})
         </foreach>
     </insert>
+
+    <!-- 处方疾病表 -->
+    <insert id="addPrescriptionSickness">
+        insert into prescription_sickness_relation values
+        <foreach collection="prescriptionId" index="index" item="item" separator=",">
+            (#{prescriptionId},#{sicknessId})
+        </foreach>
+    </insert>
+
+    <!-- 处方附加费用表 -->
+    <insert id="addPrescriptionSurcharge">
+        insert into prescription_surcharge_relation values
+        <foreach collection="prescriptionId" index="index" item="item" separator=",">
+            (#{prescriptionId},#{surchargeId})
+        </foreach>
+    </insert>
+
+    <!-- 处方检查项目表 -->
+    <insert id="addPrescriptionItem">
+        insert into prescription_items_relation values
+        <foreach collection="prescriptionId" index="index" item="item" separator=",">
+            (#{prescriptionId},#{itemsId})
+        </foreach>
+    </insert>
+
+    <!-- 处方药品表 -->
+    <insert id="addPrescriptionDrugs">
+        insert into prescription_drugs values
+            (null,#{prescriptionId},#{drugsId},#{prescriptionId},#{singleDose},#{usage},#{frequency},#{days})
+    </insert>
+
+    <!-- 处方表 -->
+    <insert id="addPrescription">
+        insert into prescription values
+            (null,#{doctorId},#{patientId},#{sicknessId},#{receptionType},now())
+    </insert>
 </mapper>
