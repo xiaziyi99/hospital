@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4df1e23e-560c-499e-a6b9-776842e8e78b" name="Default Changelist" comment="test">
-      <change afterPath="$PROJECT_DIR$/hospital-server-auth/src/main/java/hospital/authserver/config/CsrfHeaderFilter.java" afterDir="false" />
+    <list default="true" id="4df1e23e-560c-499e-a6b9-776842e8e78b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/controller/PrescriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/controller/PrescriptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/hospital/prescription/controller/PrescriptionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/hospital/prescription/controller/PrescriptionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-server-auth/src/main/java/hospital/authserver/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-server-auth/src/main/java/hospital/authserver/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-server-auth/target/classes/hospital/authserver/config/AuthServerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/hospital/authserver/config/AuthServerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-server-auth/target/classes/hospital/authserver/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/hospital/authserver/config/WebSecurityConfig.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -192,8 +192,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.PrescriptionApp" />
         <item itemvalue="Spring Boot.AuthServerJdbcApplication" />
+        <item itemvalue="Spring Boot.PrescriptionApp" />
         <item itemvalue="Spring Boot.MedicineApp" />
       </list>
     </recent_temporary>
@@ -241,7 +241,7 @@
       <workItem from="1587304029032" duration="13556000" />
       <workItem from="1587369149219" duration="26306000" />
       <workItem from="1587462082509" duration="638000" />
-      <workItem from="1587514310415" duration="2978000" />
+      <workItem from="1587514310415" duration="3393000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1587348943819</created>
@@ -292,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587515632617</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="test">
+      <created>1587517486359</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1587517486359</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
