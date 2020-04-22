@@ -1,4 +1,6 @@
 package hospital.prescription.controller;
+import hospital.common.entity.Prescription;
+import hospital.common.entity.PrescriptionDrugs;
 import hospital.common.http.HttpClientHelper;
 import hospital.common.response.Response;
 import io.swagger.annotations.Api;
@@ -30,7 +32,7 @@ public class PrescriptionAddController {
     private static final String CURRENT_SERVER_URL = "http://localhost:9005";
 
     //处方医嘱保存接口
-    @ApiOperation(value = "处方医嘱保存接口api,添加处方医嘱",response = Response.class)
+    @ApiOperation(value = "处方医嘱保存接口api,添加处方医嘱信息",response = Response.class)
     @ApiImplicitParams({
             @ApiImplicitParam(value = "处方ID",name = "prescriptionId", required = true),
             @ApiImplicitParam(value = "医嘱ID",name = "adviceId[]", required = true)
@@ -49,10 +51,10 @@ public class PrescriptionAddController {
     }
 
     //处方疾病保存接口
-    @ApiOperation(value = "处方疾病保存接口api,添加处方疾病",response = Response.class)
+    @ApiOperation(value = "处方疾病保存接口api,添加处方疾病信息",response = Response.class)
     @ApiImplicitParams({
             @ApiImplicitParam(value = "处方ID",name = "prescriptionId", required = true),
-            @ApiImplicitParam(value = "疾病ID",name = "sicknessId", required = true)
+            @ApiImplicitParam(value = "疾病ID",name = "sicknessId[]", required = true)
     })
     @GetMapping(value = "relation/addSickness")
     public Response addPrescriptionDoctorSickness(Integer prescriptionId, Integer[] sicknessId) throws Exception {
@@ -68,10 +70,10 @@ public class PrescriptionAddController {
     }
 
     //处方附加费用保存接口
-    @ApiOperation(value = "处方附加费用接口api,添加处方附加费用",response = Response.class)
+    @ApiOperation(value = "处方附加费用接口api,添加处方附加费用信息",response = Response.class)
     @ApiImplicitParams({
             @ApiImplicitParam(value = "处方ID",name = "prescriptionId", required = true),
-            @ApiImplicitParam(value = "附加费用ID",name = "surchargeId", required = true)
+            @ApiImplicitParam(value = "附加费用ID",name = "surchargeId[]", required = true)
     })
     @GetMapping(value = "relation/addSurcharge")
     public Response addPrescriptionSurcharge(Integer prescriptionId, Integer[] surchargeId) throws Exception {
@@ -87,10 +89,10 @@ public class PrescriptionAddController {
     }
 
     //处方检查项目保存接口
-    @ApiOperation(value = "处方检查项目保存接口api,添加处方检查项目",response = Response.class)
+    @ApiOperation(value = "处方检查项目保存接口api,添加处方检查项目信息",response = Response.class)
     @ApiImplicitParams({
             @ApiImplicitParam(value = "处方ID",name = "prescriptionId", required = true),
-            @ApiImplicitParam(value = "检查项目ID",name = "itemId", required = true)
+            @ApiImplicitParam(value = "检查项目ID",name = "itemId[]", required = true)
     })
     @GetMapping(value = "relation/addItem")
     public Response addPrescriptionItem(Integer prescriptionId, Integer[] itemId) throws Exception {
@@ -105,40 +107,40 @@ public class PrescriptionAddController {
         return httpClientHelper.postForResponse(serverMasterdataUrl + "/api/relation/addItem",params);
     }
 
-/*    //处方药品保存接口
-    @ApiOperation(value = "处方药品保存接口api,添加处方药品",response = Response.class)
+    //处方药品保存接口
+    @ApiOperation(value = "处方药品保存接口api,添加处方药品信息",response = Response.class)
     @ApiImplicitParams({
             @ApiImplicitParam(value = "处方ID",name = "prescriptionId", required = true),
             @ApiImplicitParam(value = "药品ID",name = "drugs = Id", required = true)
     })
-    @PostMapping(value = "relation/addDrugs")
+    @GetMapping(value = "relation/addDrugs")
     public Response addPrescriptionDrugs(Integer prescriptionId, PrescriptionDrugs prescriptionDrugs) throws Exception {
-        StringBuffer buffer = new StringBuffer("?");
+        Map<String, Object> params=new HashMap<>();
         if(prescriptionId!=null) {
-            buffer.append("&prescriptionId=").append(prescriptionId);
+            params.put("prescriptionId",prescriptionId);
         }
-        if(sicknessId!=null) {
-            buffer.append("&sicknessId=").append(sicknessId);
+        if(prescriptionDrugs!=null) {
+            params.put("prescriptionDrugs",prescriptionDrugs);
         }
-        log.debug("params:{}", buffer);
-        return httpClientHelper.getForResponse(serverMasterdataUrl + "/api/relation/addDrugs"+ buffer);
+        log.debug("params:{}", params);
+        return httpClientHelper.getForResponse(serverMasterdataUrl + "/api/relation/addDrugs"+ params);
     }
     //处方保存接口
-    @ApiOperation(value = "处方疾病保存接口api,添加处方疾病",response = Response.class)
+    @ApiOperation(value = "处方疾病保存接口api,添加处方信息",response = Response.class)
     @ApiImplicitParams({
             @ApiImplicitParam(value = "处方ID",name = "prescriptionId", required = true),
             @ApiImplicitParam(value = "医嘱ID",name = "adviceId", required = true)
     })
-    @PostMapping(value = "relation/addPrescription")
+    @GetMapping(value = "relation/addPrescription")
     public Response addPrescription(Integer prescriptionId, Prescription prescription) throws Exception {
-        StringBuffer buffer = new StringBuffer("?");
+        Map<String, Object> params=new HashMap<>();
         if(prescriptionId!=null) {
-            buffer.append("&prescriptionId=").append(prescriptionId);
+            params.put("prescriptionId",prescriptionId);
         }
-        if(sicknessId!=null) {
-            buffer.append("&sicknessId=").append(sicknessId);
+        if(prescription!=null) {
+            params.put("prescription",prescription);
         }
-        log.debug("params:{}", buffer);
-        return httpClientHelper.getForResponse(serverMasterdataUrl + "/api/relation/addPrescription"+ buffer);
-    }*/
+        log.debug("params:{}", params);
+        return httpClientHelper.getForResponse(serverMasterdataUrl + "/api/relation/addPrescription"+ params);
+    }
 }
