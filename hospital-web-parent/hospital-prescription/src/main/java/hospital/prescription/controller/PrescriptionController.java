@@ -299,27 +299,27 @@ public class PrescriptionController {
     })
     @GetMapping(value = "relation/addDoctorAdvice")
     public Response addPrescriptionDoctorAdvice(Integer prescriptionId, Integer[] adviceId) throws Exception {
-        StringBuffer buffer = new StringBuffer("?");
-        if(prescriptionId!=null) {
-            buffer.append("&prescriptionId=").append(prescriptionId);
-        }
-        if(adviceId!=null) {
-            buffer.append("&adviceId=").append(adviceId);
-        }
-        log.debug("params:{}", buffer);
-//        Map<String, Object> params=new HashMap<>();
+//        StringBuffer buffer = new StringBuffer("?");
 //        if(prescriptionId!=null) {
-//            params.put("prescriptionId",prescriptionId);
+//            buffer.append("&prescriptionId=").append(prescriptionId);
 //        }
 //        if(adviceId!=null) {
-//            /*for (int i = 0; i <adviceId.length ; i++) {
-//                params.put("adviceId",adviceId[i]);
-//                System.out.println(adviceId[i]);
-//            }*/
-//            params.put("adviceId",adviceId);
+//            buffer.append("&adviceId=").append(adviceId);
 //        }
-//        log.debug("params:{}", params);
-        return httpClientHelper.getForResponse(serverMasterdataUrl + "/api/relation/addDoctorAdvice"+buffer);
+//        log.debug("params:{}", buffer);
+        Map<String, Object> params=new HashMap<>();
+        if(prescriptionId!=null) {
+            params.put("prescriptionId",prescriptionId);
+        }
+        if(adviceId!=null) {
+            /*for (int i = 0; i <adviceId.length ; i++) {
+                params.put("adviceId",adviceId[i]);
+                System.out.println(adviceId[i]);
+            }*/
+            params.put("adviceId",adviceId);
+        }
+        log.debug("params:{}", params);
+        return httpClientHelper.postForResponse(serverMasterdataUrl + "/api/relation/addDoctorAdvice",params);
     }
 
     //处方疾病保存接口
