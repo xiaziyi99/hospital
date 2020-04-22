@@ -4,32 +4,32 @@
     <!-- 处方医嘱表 -->
     <insert id="addPrescriptionDoctorAdvice">
         insert into prescription_doctor_advice_relation values
-        <foreach collection="prescriptionId" index="index" item="item" separator=",">
-            (#{prescriptionId},#{adviceId})
+        <foreach collection="adviceId" index="index" item="item" separator=",">
+            (#{prescriptionId},#{item})
         </foreach>
     </insert>
 
     <!-- 处方疾病表 -->
     <insert id="addPrescriptionSickness">
         insert into prescription_sickness_relation values
-        <foreach collection="prescriptionId" index="index" item="item" separator=",">
-            (#{prescriptionId},#{sicknessId})
+        <foreach collection="sicknessId" index="index" item="item" separator=",">
+            (#{prescriptionId},#{item})
         </foreach>
     </insert>
 
     <!-- 处方附加费用表 -->
     <insert id="addPrescriptionSurcharge">
         insert into prescription_surcharge_relation values
-        <foreach collection="prescriptionId" index="index" item="item" separator=",">
-            (#{prescriptionId},#{surchargeId})
+        <foreach collection="surchargeId" index="index" item="item" separator=",">
+            (#{prescriptionId},#{item})
         </foreach>
     </insert>
 
     <!-- 处方检查项目表 -->
     <insert id="addPrescriptionItem">
         insert into prescription_items_relation values
-        <foreach collection="prescriptionId" index="index" item="item" separator=",">
-            (#{prescriptionId},#{itemsId})
+        <foreach collection="itemsId" index="index" item="item" separator=",">
+            (#{prescriptionId},#{item})
         </foreach>
     </insert>
 
