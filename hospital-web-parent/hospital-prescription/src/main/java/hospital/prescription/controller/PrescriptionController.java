@@ -14,10 +14,10 @@ import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
 
-@Api
+@Api(tags = "分页查询模块")
 @RestController
 @Slf4j
-@RequestMapping("/api")
+@RequestMapping("/api/select")
 public class PrescriptionController {
     @Value("${server.medicine.url}")
     private String serverMedicineUrl;
@@ -291,35 +291,38 @@ public class PrescriptionController {
 
 
 
-    //处方医嘱保存接口
+    /*//处方医嘱保存接口
     @ApiOperation(value = "处方医嘱保存接口api,添加处方医嘱",response = Response.class)
     @ApiImplicitParams({
             @ApiImplicitParam(value = "处方ID",name = "prescriptionId", required = true),
-            @ApiImplicitParam(value = "医嘱ID",name = "adviceId", required = true)
+            @ApiImplicitParam(value = "医嘱ID",name = "adviceId[]", required = true)
     })
     @GetMapping(value = "relation/addDoctorAdvice")
     public Response addPrescriptionDoctorAdvice(Integer prescriptionId, Integer[] adviceId) throws Exception {
-//        StringBuffer buffer = new StringBuffer("?");
-//        if(prescriptionId!=null) {
-//            buffer.append("&prescriptionId=").append(prescriptionId);
-//        }
-//        if(adviceId!=null) {
-//            buffer.append("&adviceId=").append(adviceId);
-//        }
-//        log.debug("params:{}", buffer);
-        Map<String, Object> params=new HashMap<>();
+        StringBuffer buffer = new StringBuffer();
         if(prescriptionId!=null) {
-            params.put("prescriptionId",prescriptionId);
+            buffer.append("&prescriptionId=").append(prescriptionId);
         }
-        if(adviceId!=null) {
-            /*for (int i = 0; i <adviceId.length ; i++) {
+        for(int i=0;i<adviceId.length;i++){
+            if(adviceId!=null) {
+                buffer.append("&adviceId=").append(adviceId[i]);
+            }
+            System.out.println(adviceId[i]);
+        }
+        log.debug("params:{}", buffer);
+        //Map<String, Object> params=new HashMap<>();
+        *//*if(prescriptionId!=null) {
+            params.put("prescriptionId",prescriptionId);
+        }*//*
+        *//*if(adviceId!=null) {
+            *//**//*for (int i = 0; i <adviceId.length ; i++) {
                 params.put("adviceId",adviceId[i]);
                 System.out.println(adviceId[i]);
-            }*/
+            }*//**//*
             params.put("adviceId",adviceId);
-        }
-        log.debug("params:{}", params);
-        return httpClientHelper.postForResponse(serverMasterdataUrl + "/api/relation/addDoctorAdvice",params);
+        }*//*
+        log.debug("params:{}", buffer);
+        return httpClientHelper.getForResponse(serverMasterdataUrl + "/api/relation/addDoctorAdvice"+buffer);
     }
 
     //处方疾病保存接口
@@ -336,7 +339,7 @@ public class PrescriptionController {
         }
         if(sicknessId!=null) {
             for (int i = 0; i <sicknessId.length ; i++) {
-                params.put("sicknessId",sicknessId[i]);
+                params.put("sicknessId"+i,sicknessId[i]);
             }
         }
         log.debug("params:{}", params);
@@ -385,7 +388,7 @@ public class PrescriptionController {
         return httpClientHelper.postForResponse(serverMasterdataUrl + "/api/relation/addItem",params);
     }
 
-/*    //处方药品保存接口
+*//*    //处方药品保存接口
     @ApiOperation(value = "处方药品保存接口api,添加处方药品",response = Response.class)
     @ApiImplicitParams({
             @ApiImplicitParam(value = "处方ID",name = "prescriptionId", required = true),
@@ -420,7 +423,8 @@ public class PrescriptionController {
         }
         log.debug("params:{}", buffer);
         return httpClientHelper.getForResponse(serverMasterdataUrl + "/api/relation/addPrescription"+ buffer);
-    }*/
+    }
+     */
 
     //测试post接口失败
 //    @GetMapping(value = "getMedicines/findByPost")

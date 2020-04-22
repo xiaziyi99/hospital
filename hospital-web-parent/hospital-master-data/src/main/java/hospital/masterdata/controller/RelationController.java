@@ -6,11 +6,8 @@ import hospital.common.entity.PrescriptionDrugs;
 import hospital.masterdata.service.RelationService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
-
-@Api
+import org.springframework.web.bind.annotation.*;
+@Api(tags = "关系表模块")
 @RestController
 @RequestMapping("/api/relation")
 public class RelationController {

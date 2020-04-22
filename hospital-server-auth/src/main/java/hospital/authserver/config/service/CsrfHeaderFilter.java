@@ -1,4 +1,4 @@
-package hospital.authserver.config;
+package hospital.authserver.config.service;
 import java.io.IOException;
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;

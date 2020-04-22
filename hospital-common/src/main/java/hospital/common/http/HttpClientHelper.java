@@ -8,11 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.CookieStore;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpHead;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.client.methods.HttpRequestBase;
+import org.apache.http.client.methods.*;
 import org.apache.http.client.utils.HttpClientUtils;
 import org.apache.http.cookie.Cookie;
 import org.apache.http.impl.client.BasicCookieStore;
@@ -76,7 +72,7 @@ public class HttpClientHelper {
 		//取回单点登录目标机的局部sessionid,用在后续的Post请求中标识身份
 		//同时还取回了目标机的csrf令牌
 		URI serverUrl = URI.create(uri);
-		HttpHead httpHead = new HttpHead("http://" + serverUrl.getHost() +":" + serverUrl.getPort());
+		HttpOptions httpHead = new HttpOptions("http://" + serverUrl.getHost() +":" + serverUrl.getPort());
 		httpHead.setHeader("Cookie",ssoCookies);
 		List<Cookie> cookies = this.doHead(httpHead);
 		String targetCsrfToken = null;
@@ -94,17 +90,19 @@ public class HttpClientHelper {
 		httpPost.setHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:75.0) Gecko/20100101 Firefox/75.0");
 		httpPost.setHeader("Cookie", ssoCookies);
 		params.put("_csrf", targetCsrfToken);//令牌加入到请求参数（头和参数二选一就行，都加更保险）
-		//不需要再配置信任列表了
-		/*if (originServerUrl != null) {
-			// 被调用服务器的spring security csrf过滤器默认会阻止post跨站访问
-			// 在被调用的服务器配置文件中加入了信任的主机地址
-			httpPost.setHeader(CusomCsrfMatcher.HEADER_NAME, originServerUrl);
-		}*/
 		if (params != null) {
 			List<NameValuePair> nameValuePairs = new ArrayList<>();
 			params.forEach((k, v) -> {
 				if (v != null) {
-					nameValuePairs.add(new BasicNameValuePair(k, v.toString()));
+					if(v instanceof Object[]) {
+						Object[] arr = (Object[]) v;
+						for(Object value : arr) {
+							nameValuePairs.add(new BasicNameValuePair(k, value.toString()));
+						}
+					} else {
+						nameValuePairs.add(new BasicNameValuePair(k, v.toString()));
+					}
+
 				}
 			});
 			httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs, StandardCharsets.UTF_8));
