@@ -110,17 +110,41 @@ public class PrescriptionAddController {
     //处方药品保存接口
     @ApiOperation(value = "处方药品保存接口api,添加处方药品信息",response = Response.class)
     @ApiImplicitParams({
+            @ApiImplicitParam(value = "药品ID",name = "drugsId", required = true),
             @ApiImplicitParam(value = "处方ID",name = "prescriptionId", required = true),
-            @ApiImplicitParam(value = "药品ID",name = "drugs = Id", required = true)
+            @ApiImplicitParam(value = "单次用量",name = "singleDose", required = true),
+            @ApiImplicitParam(value = "用法",name = "usage", required = true),
+            @ApiImplicitParam(value = "频度",name = "frequency", required = true),
+            @ApiImplicitParam(value = "天数",name = "days", required = true),
+            @ApiImplicitParam(value = "单价",name = "price", required = true),
+            @ApiImplicitParam(value = "总量",name = "total", required = true)
     })
     @GetMapping(value = "relation/addDrugs")
-    public Response addPrescriptionDrugs(Integer prescriptionId, PrescriptionDrugs prescriptionDrugs) throws Exception {
+    public Response addPrescriptionDrugs(PrescriptionDrugs prescriptionDrugs) throws Exception {
         Map<String, Object> params=new HashMap<>();
-        if(prescriptionId!=null) {
-            params.put("prescriptionId",prescriptionId);
+        if(prescriptionDrugs.getDrugsId()!=null) {
+            params.put("drugsId",prescriptionDrugs.getDrugsId());
         }
-        if(prescriptionDrugs!=null) {
-            params.put("prescriptionDrugs",prescriptionDrugs);
+        if(prescriptionDrugs.getPrescriptionId()!=null) {
+            params.put("prescriptionId",prescriptionDrugs.getPrescriptionId());
+        }
+        if(prescriptionDrugs.getSingleDose()!=null) {
+            params.put("singleDose",prescriptionDrugs.getSingleDose());
+        }
+        if(prescriptionDrugs.getUsage()!=null) {
+            params.put("usage",prescriptionDrugs.getUsage());
+        }
+        if(prescriptionDrugs.getFrequency()!=null) {
+            params.put("frequency",prescriptionDrugs.getFrequency());
+        }
+        if(prescriptionDrugs.getDays()!=null) {
+            params.put("days",prescriptionDrugs.getDays());
+        }
+        if(prescriptionDrugs.getPrice()!=null) {
+            params.put("price",prescriptionDrugs.getPrice());
+        }
+        if(prescriptionDrugs.getTotal()!=null) {
+            params.put("total",prescriptionDrugs.getTotal());
         }
         log.debug("params:{}", params);
         return httpClientHelper.getForResponse(serverMasterdataUrl + "/api/relation/addDrugs"+ params);
@@ -128,17 +152,29 @@ public class PrescriptionAddController {
     //处方保存接口
     @ApiOperation(value = "处方疾病保存接口api,添加处方信息",response = Response.class)
     @ApiImplicitParams({
-            @ApiImplicitParam(value = "处方ID",name = "prescriptionId", required = true),
-            @ApiImplicitParam(value = "医嘱ID",name = "adviceId", required = true)
+            @ApiImplicitParam(value = "医生id",name = "doctorId", required = true),
+            @ApiImplicitParam(value = "患者id",name = "patientId", required = true),
+            @ApiImplicitParam(value = "疾病id",name = "sicknessId", required = true),
+            @ApiImplicitParam(value = "接诊类型,1初诊,2复诊",name = "receptionType", required = true),
+            @ApiImplicitParam(value = "创建时间",name = "createDate", required = true)
     })
     @GetMapping(value = "relation/addPrescription")
-    public Response addPrescription(Integer prescriptionId, Prescription prescription) throws Exception {
+    public Response addPrescription(Prescription prescription) throws Exception {
         Map<String, Object> params=new HashMap<>();
-        if(prescriptionId!=null) {
-            params.put("prescriptionId",prescriptionId);
+        if(prescription.getDoctorId()!=null) {
+            params.put("doctorId",prescription.getDoctorId());
         }
-        if(prescription!=null) {
-            params.put("prescription",prescription);
+        if(prescription.getPatientId()!=null) {
+            params.put("patientId",prescription.getPatientId());
+        }
+        if(prescription.getSicknessId()!=null) {
+            params.put("sicknessId",prescription.getSicknessId());
+        }
+        if(prescription.getReceptionType()!=null) {
+            params.put("receptionType",prescription.getReceptionType());
+        }
+        if(prescription.getCreateDate()!=null) {
+            params.put("createDate",prescription.getCreateDate());
         }
         log.debug("params:{}", params);
         return httpClientHelper.getForResponse(serverMasterdataUrl + "/api/relation/addPrescription"+ params);

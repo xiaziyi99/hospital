@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4df1e23e-560c-499e-a6b9-776842e8e78b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/controller/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/controller/DemoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/resources/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/resources/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/mapper/RelationMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common/entity/PrescriptionDrugs.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common/entity/PrescriptionDrugs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/controller/PrescriptionAddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/controller/PrescriptionAddController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -261,7 +259,7 @@
       <workItem from="1587462082509" duration="638000" />
       <workItem from="1587514310415" duration="22540000" />
       <workItem from="1587600446331" duration="1503000" />
-      <workItem from="1587602131620" duration="2901000" />
+      <workItem from="1587602131620" duration="4430000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1587348943819</created>
@@ -347,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587602675755</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="test">
+      <created>1587605059721</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1587605059721</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
