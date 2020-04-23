@@ -2,87 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4df1e23e-560c-499e-a6b9-776842e8e78b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/entity/Doctor$DoctorBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/entity/Doctor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/entity/DoctorAdvice$DoctorAdviceBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/entity/DoctorAdvice.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/entity/Items$ItemsBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/entity/Items.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/entity/Patient$PatientBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/entity/Patient.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/entity/Prescription$PrescriptionBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/entity/Prescription.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/entity/PrescriptionDrugs$PrescriptionDrugsBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/entity/PrescriptionDrugs.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/entity/PrescriptionModel$PrescriptionModelBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/entity/PrescriptionModel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/entity/Sickness$SicknessBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/entity/Sickness.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/entity/Surcharge$SurchargeBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/entity/Surcharge.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/filter/CsrfFilterConfig$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-common/target/classes/hospital/common/filter/CsrfFilterConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-server-auth/target/classes/hospital/authserver/config/service/CsrfHeaderFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/controller/RelationController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/mapper/RelationMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/RelationService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/hospital/masterdata/service/RelationServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/dto/DemoDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/dto/ExamineItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/dto/Medicine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/dto/Patient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/report/CreateReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/resources/public/add2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/resources/public/index2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/resources/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/resources/templates/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/mapper/RelationMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-common/target/classes/cn/bdqn/his/common/http/HttpClientHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-common/target/classes/cn/bdqn/his/common/interceptor/SsoCookieWrapperInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-common/target/classes/cn/bdqn/his/common/response/Response.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-common/target/classes/cn/bdqn/his/common/response/ResponseEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-common/target/classes/cn/bdqn/his/common/swagger/SwaggerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-server-resource/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-server-resource/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-server-resource/target/classes/cn/bdqn/his/authresource/AuthResourceApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-server-resource/target/classes/cn/bdqn/his/authresource/config/ResourceServerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-server-resource/target/classes/cn/bdqn/his/authresource/controller/ContentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-server-resource/target/classes/cn/bdqn/his/authresource/domain/TbContent$TbContentBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-server-resource/target/classes/cn/bdqn/his/authresource/domain/TbContent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-server-resource/target/classes/cn/bdqn/his/authresource/mapper/TbContentMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-server-resource/target/classes/cn/bdqn/his/authresource/service/ContentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-server-resource/target/classes/mapper/TbContentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-server-resource/target/classes/mapper/TbContentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-server-resource/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-server-resource/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-server-resource/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-server-resource/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/cn/bdqn/his/MedicineApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/cn/bdqn/his/medicine/config/MvcConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/cn/bdqn/his/medicine/controller/MedicineController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/cn/bdqn/his/medicine/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/cn/bdqn/his/medicine/entity/Medicine$MedicineBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/cn/bdqn/his/medicine/entity/Medicine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/cn/bdqn/his/medicine/entity/MedicineType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/cn/bdqn/his/medicine/mapper/MedicineMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/cn/bdqn/his/medicine/service/MedicineService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/classes/cn/bdqn/his/medicine/service/MedicineServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-medicine/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/resources/mapper/RelationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/target/classes/mapper/RelationMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/cn/bdqn/his/PrescriptionApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/cn/bdqn/his/prescription/config/MvcConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/cn/bdqn/his/prescription/controller/DemoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/cn/bdqn/his/prescription/controller/PrescriptionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/hospital/PrescriptionApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/hospital/prescription/config/MvcConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/hospital/prescription/controller/DemoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/hospital/prescription/controller/PrescriptionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/controller/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/controller/DemoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/resources/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/resources/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/mapper/RelationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/target/classes/public/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -287,8 +211,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.PrescriptionApp" />
-        <item itemvalue="Spring Boot.AuthServerJdbcApplication" />
         <item itemvalue="Spring Boot.MedicineApp" />
+        <item itemvalue="Spring Boot.AuthServerJdbcApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -297,7 +221,12 @@
       <serviceView>
         <option name="contentProportion" value="0.22730376" />
         <treeState>
-          <expand />
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@61043525" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
           <select />
         </treeState>
       </serviceView>
@@ -332,7 +261,7 @@
       <workItem from="1587462082509" duration="638000" />
       <workItem from="1587514310415" duration="22540000" />
       <workItem from="1587600446331" duration="1503000" />
-      <workItem from="1587602131620" duration="497000" />
+      <workItem from="1587602131620" duration="2901000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1587348943819</created>
@@ -411,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587548331742</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="test">
+      <created>1587602675755</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1587602675755</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

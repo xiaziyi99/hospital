@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <title>就诊模块</title>
     <style>
-        a, a:visited{color: limegreen;}
+        a:visited{color: limegreen;}
     </style>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 </head>
 <body>
 <h1>就诊模块</h1>
+<h3><a href="report">报表</a></h3>
 <h3><a href="http://localhost:9006">药品模块</a></h3>
 <h3><a href="http://localhost:9007">基础数据模块</a></h3>
 <h3><a href="/api/medicine/users">调用药品模块api</a></h3>
@@ -19,6 +21,7 @@
     分类：<input name="typeId" VALUE="1"><br/>
     名称：<input name="name" VALUE="化"><br/>
     <button type="button" id="btnSubmit">查询药品</button>
+    <button type="button" id="btnPostSubmit">post查询药品</button>
 </form>
 <div id="data">
     <h4>ajax获取的药品模块分页数据如下</h4>
@@ -41,6 +44,9 @@
                 type: 'get',
                 dataType: 'json',
                 success: function (result) {
+                    if(result.code == '401') {
+                        alert('请先登录目标系统');
+                    }
                     result = result.responseBody;
                     $("#pageInfo").html("总记录数：" + result.total + ",总页数：" + result.pages + ",当前页:" + result.pageNum);
                     $("#list").html("");
@@ -54,7 +60,35 @@
                 }
             })
         });
-
+        $("#btnPostSubmit").click(function () {
+            var data = {
+                pageNum:$("[name=pageNum]").val(),
+                pageSize:$("[name=pageSize]").val(),
+                typeId:$("[name=typeId]").val(),
+                name:$("[name=name]").val()
+            }
+            $.ajax({
+                url: 'api/getMedicines/findByPost',
+                data: data,
+                type: 'get',
+                dataType: 'json',
+                success: function (result) {
+                    if(result.code == '401') {
+                        alert('请先登录目标系统');
+                    }
+                    result = result.responseBody;
+                    $("#pageInfo").html("总记录数：" + result.total + ",总页数：" + result.pages + ",当前页:" + result.pageNum);
+                    $("#list").html("");
+                    $.each(result.list,function(i, item) {
+                        $("#list").append("<li>"+JSON.stringify(item)+"</li>");
+                    });
+                },
+                error: function(xhr) {
+                    console.log(xhr);
+                    alert('加载数据错误');
+                }
+            })
+        });
     })
 </script>
 </body>
