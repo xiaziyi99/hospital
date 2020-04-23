@@ -1,7 +1,7 @@
-cn\bdqn\his\authresource\AuthResourceApplication.class
-cn\bdqn\his\authresource\mapper\TbContentMapper.class
-cn\bdqn\his\authresource\controller\ContentController.class
-cn\bdqn\his\authresource\domain\TbContent$TbContentBuilder.class
-cn\bdqn\his\authresource\domain\TbContent.class
-cn\bdqn\his\authresource\service\ContentService.class
-cn\bdqn\his\authresource\config\ResourceServerConfig.class
+hospital\authresource\config\ResourceServerConfig.class
+hospital\authresource\domain\TbContent.class
+hospital\authresource\AuthResourceApplication.class
+hospital\authresource\mapper\TbContentMapper.class
+hospital\authresource\domain\TbContent$TbContentBuilder.class
+hospital\authresource\controller\ContentController.class
+hospital\authresource\service\ContentService.class
