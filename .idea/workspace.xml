@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4df1e23e-560c-499e-a6b9-776842e8e78b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common/CusomCsrfMatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common/GlobalCorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-master-data/src/main/java/hospital/masterdata/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common/entity/PrescriptionDrugs.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-common/src/main/java/hospital/common/entity/PrescriptionDrugs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/controller/PrescriptionAddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/java/hospital/prescription/controller/PrescriptionAddController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-server-auth/src/main/java/hospital/authserver/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-server-auth/src/main/java/hospital/authserver/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-web-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-web-parent/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,9 +77,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/hospital-common/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/hospital-web-parent/hospital-prescription/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -219,12 +223,7 @@
       <serviceView>
         <option name="contentProportion" value="0.22730376" />
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@61043525" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -259,7 +258,9 @@
       <workItem from="1587462082509" duration="638000" />
       <workItem from="1587514310415" duration="22540000" />
       <workItem from="1587600446331" duration="1503000" />
-      <workItem from="1587602131620" duration="4430000" />
+      <workItem from="1587602131620" duration="7539000" />
+      <workItem from="1587612992942" duration="1434000" />
+      <workItem from="1587803193067" duration="3068000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1587348943819</created>
@@ -352,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587605059721</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="test">
+      <created>1587606658724</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1587606658724</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
