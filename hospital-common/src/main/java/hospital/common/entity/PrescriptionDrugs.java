@@ -17,6 +17,4 @@ public class PrescriptionDrugs {
     private String usage;
     private String frequency;
     private Integer days;
-    private Float price;
-    private Float total;
 }
